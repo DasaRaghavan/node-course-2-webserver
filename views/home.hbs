@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <meta charset = "utf-8">
+</html>
+<head>
+  <title>{{pageTitle}}</title>
+</head>
+<body>
+  {{> header}}
+  <p>{{name}}!! You like {{#each likes}}{{.}} {{/each}}!</p>
+  {{> footer}}
+</body>
