@@ -21,12 +21,12 @@ app.use((req, res, next)=> {
 });
 
 //maintenance middleware.
-app.use((req, res, next) => {
-  res.render('maintenance.hbs', {
-    pageTitle: 'Under Construction',
-    message: 'We will be right back'
-  });
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//     pageTitle: 'Under Construction',
+//     message: 'We will be right back'
+//   });
+// });
 
 //help URL -- for static pages
 app.use(express.static(__dirname + '/public'));
