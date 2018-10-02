@@ -55,6 +55,18 @@ app.get('/', (req, res) => {
   });
 });
 
+//route for projects
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    message: 'List of Projects',
+    projects: [
+                'Weather',
+                'Express'
+              ]
+  });
+});
+
 //route for about
 app.get('/about', (req, res) => {
   res.render('about.hbs', {

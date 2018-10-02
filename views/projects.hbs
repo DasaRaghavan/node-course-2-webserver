@@ -7,6 +7,11 @@
 </head>
 <body>
   {{> header}}
-  <p>{{name}}!! You like <ol>{{#each likes}}<li>{{.}}</li>{{/each}}</ol></p>
+  <p><b>{{message}}</b></p>
+  <ul>
+    {{#each projects}}
+        <li>{{.}}</li>
+    {{/each}}
+  </ul>
   {{> footer}}
 </body>
